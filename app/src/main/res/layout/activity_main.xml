@@ -1,18 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/resultTXTView"
+
+
+    />
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/digitsGRD"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+       android:layout_marginTop="5dp"
+        android:layout_below="@+id/resultTXTView"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:text="%"
+            android:id="@+id/percentageBTN"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:text="C"
+            android:id="@+id/clearBTN"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:text="del"
+            android:id="@+id/deleteBTN"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <Button
+            android:id="@+id/divideBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="/"
+
+            />
+
+        <Button
+            android:id="@+id/oneBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/twoBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/oneBTN"
+            android:text="2"
+            />
+
+        <Button
+            android:id="@+id/threeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/twoBTN"
+            android:text="3" />
+        <Button
+            android:id="@+id/timesBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="x"
+
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/fourBTN"
+            android:layout_below="@+id/oneBTN"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/fiveBTN"
+            android:layout_toRightOf="@+id/fourBTN"
+            android:layout_below="@+id/twoBTN"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/sixBTN"
+            android:layout_toRightOf="@+id/fiveBTN"
+            android:layout_below="@id/threeBTN"
+            />
+        <Button
+            android:id="@+id/substractBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="-"
+
+            />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/sevenBTN"
+            android:layout_below="@id/fourBTN"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/eightBTN"
+            android:layout_toRightOf="@id/sevenBTN"
+            android:layout_below="@id/fiveBTN"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/nineBTN"
+            android:layout_below="@id/sixBTN"
+            android:layout_toRightOf="@id/eightBTN"
+            />
+
+        <Button
+            android:id="@+id/addBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="+"
+
+            />
+        <Button
+            android:id="@+id/none1BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=""
+
+            />
+
+        <Button
+            android:id="@+id/zeroBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="0"
+
+            />
+        <Button
+            android:id="@+id/none2BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=""
+
+            />
+        <Button
+            android:id="@+id/equalBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="="
+
+            />
+
+
+
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>
