@@ -12,9 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-
-
-        />
+        android:hint="Result"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        android:lines="1"/>
 
     <GridLayout
         android:id="@+id/digitsGRD"
@@ -41,7 +42,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="C"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/deleteBTN"
@@ -65,7 +67,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="1"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/twoBTN"
@@ -74,7 +77,8 @@
             android:layout_toRightOf="@+id/oneBTN"
             android:clickable="true"
             android:text="2"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/threeBTN"
@@ -83,7 +87,8 @@
             android:layout_toRightOf="@+id/twoBTN"
             android:clickable="true"
             android:text="3"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/timesBTN"
@@ -91,7 +96,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="x"
-
+            android:onClick="input_digits"
             android:textSize="20dp" />
 
 
@@ -102,7 +107,8 @@
             android:layout_below="@+id/oneBTN"
             android:clickable="true"
             android:text="4"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/fiveBTN"
@@ -112,7 +118,8 @@
             android:layout_toRightOf="@+id/fourBTN"
             android:clickable="true"
             android:text="5"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/sixBTN"
@@ -122,7 +129,8 @@
             android:layout_toRightOf="@+id/fiveBTN"
             android:clickable="true"
             android:text="6"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/substractBTN"
@@ -130,7 +138,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="-"
-
+            android:onClick="input_digits"
             android:textSize="20dp" />
 
 
@@ -141,7 +149,8 @@
             android:layout_below="@id/fourBTN"
             android:clickable="true"
             android:text="7"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/eightBTN"
@@ -151,7 +160,8 @@
             android:layout_toRightOf="@id/sevenBTN"
             android:clickable="true"
             android:text="8"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/nineBTN"
@@ -161,7 +171,8 @@
             android:layout_toRightOf="@id/eightBTN"
             android:clickable="true"
             android:text="9"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/addBTN"
@@ -187,7 +198,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="0"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:onClick="input_digits"/>
 
         <Button
             android:id="@+id/none2BTN"
