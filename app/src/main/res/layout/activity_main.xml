@@ -16,6 +16,16 @@
         android:paddingLeft="10dp"
         android:textSize="30dp"
         android:lines="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/digitsGRD"
+        android:hint="Test input view"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:id="@+id/testInputTXTView"
+
+        />
 
     <GridLayout
         android:id="@+id/digitsGRD"
@@ -43,7 +53,7 @@
             android:clickable="true"
             android:text="C"
             android:textSize="20dp"
-            android:onClick="input_digits"/>
+            android:onClick="clearEverything"/>
 
         <Button
             android:id="@+id/deleteBTN"
@@ -180,7 +190,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:text="+"
-
+            android:onClick="input_digits"
             android:textSize="20dp" />
 
         <Button
@@ -216,7 +226,8 @@
             android:layout_height="wrap_content"
             android:text="="
             android:textSize="20dp"
-
+            android:clickable="true"
+            android:onClick="input_digits"
             />
 
 
